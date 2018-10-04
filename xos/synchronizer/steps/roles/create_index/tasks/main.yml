@@ -1,0 +1,4 @@
+- name: Write index.html to /var/www
+  template:
+    src=index.html.j2
+    dest=/var/www/html/index.html

@@ -1,0 +1,14 @@
+name: nginxservice
+accessor:
+  username: xosadmin@opencord.org
+  password: "@/opt/xos/services/nginxservice/credentials/xosadmin@opencord.org"
+required_models:
+  - NginxService
+  - NginxServiceInstance
+  - ServiceDependency
+  - ServiceMonitoringAgentInfo
+dependency_graph: "/opt/xos/synchronizers/nginxservice/model-deps"
+steps_dir: "/opt/xos/synchronizers/nginxservice/steps"
+sys_dir: "/opt/xos/synchronizers/nginxservice/sys"
+model_policies_dir: "/opt/xos/synchronizers/nginxservice/model_policies"
+models_dir: "/opt/xos/synchronizers/nginxservice/models"

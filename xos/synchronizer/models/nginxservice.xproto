@@ -1,0 +1,12 @@
+option name = "nginxservice";
+option app_label = "nginxservice";
+
+message NginxService (Service){
+    option verbose_name = "Nginx Service";
+    required string service_message = 1 [help_text = "Nginx Service Message", max_length = 254, null = False, db_index = False, blank = False];
+}
+
+message NginxServiceInstance (TenantWithContainer){
+     option verbose_name = "Nginx Service Instance";
+     required string tenant_message = 1 [help_text = "Nginx Tenant Message", max_length = 254, null = False, db_index = False, blank = False];
+}
